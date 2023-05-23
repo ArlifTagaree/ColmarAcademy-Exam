@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap%27');
+
+/* declare universal */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* declare body*/
+body {
+    color: #4f4e4e;
+    max-width: 1200px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+/* nav bar */
+.headerdesktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    height: 64px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;    
+}
+
+ul {
+    display: flex;
+    gap: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* for mobile */
+.headermobile {
+    display: none;
+}
+
+/* section1 */
+.section1 {
+    display: flex;
+    background-color: #d8d8d8;
+    width: 100%;  
+    gap: 24px;
+    padding: 32px 24px;
+}
+
+.section1-left {
+    width: 60%;
+}
+
+.section1-left img {
+    width: 100%;
+}
+.section1-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 120px;
+}
+
+.section1-right p {
+    padding: 24px 0;
+
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    background-color: #4e4e4e;
+    color:white;
+    border: none;
+}
+
+/* section2 */
+.section2 {
+    display: flex;
+    width: 100%;
+    gap: 24px;
+    padding: 32px 0 32px 24px;
+}
+
+.section2-left {
+    width: 60%;
+}
+
+.section2-left img {
+    width: 100%;
+}
+
+.section2-left h3 {
+    padding: 32px 0 24px 0;
+}
+
+.section2-right {
+    width: 40%;
+
+}
+
+.subsection2-right {
+    display: flex;
+    width: 100%;
+    border: #d6d6d6 solid 0.5px ;
+}
+
+.subsection2-right img {
+    width: 35%;
+    padding: 16px;
+}
+
+.subsection2text {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subsection2text p:nth-child(2){
+    padding: 8px 0;
+}
+
+.picturesection2mobile {
+    display: none;
+}
+
+/* section3 */
+.section3 {
+    background-color:#D8D8D8;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px 72px;
+    gap: 32px;
+}
+
+.section3 h2 {
+    text-align: center;
+}
+
+.subsection3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 32px ;
+    margin-left: 72px;
+    margin-right: 72px;
+}
+
+.subsection3-courses {
+    background-color: white;
+    width: 30%;
+    flex: 1 1 auto;
+}
+
+.subsection3-courses div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px 24px;
+    gap: 8px;
+}
+
+/* section4 */
+.section4 {
+    width: 100%;
+}
+
+.section4 h2 {
+    text-align: center;
+    padding: 32px 0;
+}
+
+.subsection4 {
+    display: flex;
+}
+
+.subsection4-left {
+    width: 60%;
+    padding: 0 24px 32px 24px;
+}
+
+.subsection4-left video {
+    width: 100%;
+    
+}
+
+.videotext {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.videotext h3 {
+    padding-top: 24px
+}
+
+.subsection4-right {
+    width: 40%;
+}
+
+.banner {
+    width: 100%;
+    display: flex;
+}
+
+.banner img {
+    width: 35%;
+    padding: 16px;
+}
+
+.bannertext {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* section4 */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+}
+
+/* mobile */
+@media (max-width:576px){
+    /* nav bar */
+    .headerdesktop {
+        display: none;
+    }
+
+    .headermobile {
+        display: block;
+    }
+
+    .headermobile nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 64px;
+    }
+    /* section1 */
+    .section1 {
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+    }
+
+    .section1-left {
+        width: 100%;
+    }
+
+    .section1-right {
+        width: 100%;
+        padding: 32px 16px;
+
+    }
+
+    .section1-right p {
+        padding: 32px 0 24px 0;
+    }
+    /* section2 */
+
+    .section2-left {
+        display: none;
+    }
+
+    .section2-right {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 48px;
+        padding: 0 0 32px 0;
+    }
+
+    .subsection2-right {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        
+    }
+
+    .picturesection2desktop {
+        display: none;
+    }
+
+    .picturesection2mobile {
+        display: block;
+    }
+    
+    .subsection2-right img {
+        width: 100%;
+    }
+
+    .section2 {
+        padding: 0;
+    }
+
+    .subsection2text {
+        width: 100%;
+        padding: 0 32px;
+    }
+
+    /* section3 */
+
+    .section3 {
+        background-color: white;
+        padding: 32px 16px;
+        border: #ececec solid 0.5px ;
+
+    }
+
+    .subsection3-courses {
+        background-color: #d8d8d8;
+        width: 100%;
+    
+    }
+
+    .subsection3-courses img,
+    .subsection3-courses p {
+        display: none;
+    }
+    
+    .subsection3 {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 8px;
+        margin: 0;
+    }
+
+    /* section4 */
+
+    .section4 h2{
+        padding: 32px 0 16px 0;
+     
+    }
+
+    .videotext {
+        display: none;
+    }
+
+    .subsection4-right {
+        display: none;
+    }
+
+    .subsection4-left {
+        width: 100%;
+        padding: 0 0 24px 0;
+    }
+
+    .subsection4-left video {
+        width: 100%;
+    }
+
+    footer span {
+        display: none;
+
+    }
+
+
+
+}
+
+
